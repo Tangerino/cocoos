@@ -73,47 +73,47 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cocoos: ${OBJECTFILES}
 ${OBJECTDIR}/main.o: main.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -D_GNU_SOURCE -std=c99 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
+	$(COMPILE.c) -O2 -D_GNU_SOURCE -DROUND_ROBIN -std=c99 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
 
 ${OBJECTDIR}/os_assert.o: os_assert.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -D_GNU_SOURCE -std=c99 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/os_assert.o os_assert.c
+	$(COMPILE.c) -O2 -D_GNU_SOURCE -DROUND_ROBIN -std=c99 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/os_assert.o os_assert.c
 
 ${OBJECTDIR}/os_cbk.o: os_cbk.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -D_GNU_SOURCE -std=c99 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/os_cbk.o os_cbk.c
+	$(COMPILE.c) -O2 -D_GNU_SOURCE -DROUND_ROBIN -std=c99 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/os_cbk.o os_cbk.c
 
 ${OBJECTDIR}/os_event.o: os_event.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -D_GNU_SOURCE -std=c99 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/os_event.o os_event.c
+	$(COMPILE.c) -O2 -D_GNU_SOURCE -DROUND_ROBIN -std=c99 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/os_event.o os_event.c
 
 ${OBJECTDIR}/os_kernel.o: os_kernel.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -D_GNU_SOURCE -std=c99 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/os_kernel.o os_kernel.c
+	$(COMPILE.c) -O2 -D_GNU_SOURCE -DROUND_ROBIN -std=c99 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/os_kernel.o os_kernel.c
 
 ${OBJECTDIR}/os_msgqueue.o: os_msgqueue.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -D_GNU_SOURCE -std=c99 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/os_msgqueue.o os_msgqueue.c
+	$(COMPILE.c) -O2 -D_GNU_SOURCE -DROUND_ROBIN -std=c99 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/os_msgqueue.o os_msgqueue.c
 
 ${OBJECTDIR}/os_sem.o: os_sem.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -D_GNU_SOURCE -std=c99 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/os_sem.o os_sem.c
+	$(COMPILE.c) -O2 -D_GNU_SOURCE -DROUND_ROBIN -std=c99 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/os_sem.o os_sem.c
 
 ${OBJECTDIR}/os_task.o: os_task.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -D_GNU_SOURCE -std=c99 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/os_task.o os_task.c
+	$(COMPILE.c) -O2 -D_GNU_SOURCE -DROUND_ROBIN -std=c99 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/os_task.o os_task.c
 
 ${OBJECTDIR}/timer.o: timer.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -D_GNU_SOURCE -std=c99 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/timer.o timer.c
+	$(COMPILE.c) -O2 -D_GNU_SOURCE -DROUND_ROBIN -std=c99 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/timer.o timer.c
 
 # Subprojects
 .build-subprojects:

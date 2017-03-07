@@ -57,6 +57,7 @@
         <cTool>
           <standard>3</standard>
           <preprocessorList>
+            <Elem>ROUND_ROBIN</Elem>
             <Elem>_GNU_SOURCE</Elem>
           </preprocessorList>
         </cTool>
@@ -118,6 +119,7 @@
           <developmentMode>5</developmentMode>
           <standard>3</standard>
           <preprocessorList>
+            <Elem>ROUND_ROBIN</Elem>
             <Elem>_GNU_SOURCE</Elem>
           </preprocessorList>
         </cTool>

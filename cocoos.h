@@ -32,8 +32,8 @@
  * This file is part of the cocoOS operating system.
  * Author: Peter Eckstrand <info@cocoos.net>
  */
- 
- 
+
+
 
 #ifndef COCOOS_H
 #define COCOOS_H
@@ -57,16 +57,16 @@ extern "C" {
 
 #endif
 
-#define NO_TID	        255
+#define NO_TID         255
 #define NO_EVENT        255
 #define NO_QUEUE        255
 #define NO_SEM          255
 
-/* Total number of semaphores needed */
+    /* Total number of semaphores needed */
 #define N_TOTAL_SEMAPHORES    ( N_SEMAPHORES + N_QUEUES )
 
 
-/* Total number of events needed */
+    /* Total number of events needed */
 #define N_TOTAL_EVENTS        ( N_EVENTS + N_QUEUES )
 
 
@@ -78,7 +78,7 @@ extern "C" {
 
 #define OS_BEGIN            uint16_t os_task_state = os_task_internal_state_get(running_tid); switch ( os_task_state ) { case 0:
 
-#define OS_END	            os_task_kill(running_tid);\
+#define OS_END             os_task_kill(running_tid);\
                             running_tid = NO_TID;\
 					        return;}
 
@@ -91,18 +91,18 @@ extern "C" {
 
 
 
-#define OS_WAIT_TICKS(x,y)	do {\
+#define OS_WAIT_TICKS(x,y) do {\
 								os_task_wait_time_set( running_tid, y, x );\
 								OS_SCHEDULE(0);\
 						   	   } while ( 0 )
 
 
 
-extern uint8_t running_tid;
-extern uint8_t last_running_task;
-extern uint8_t running;
+    extern uint8_t running_tid;
+    extern uint8_t last_running_task;
+    extern uint8_t running;
 
-uint8_t os_running( void );
+    uint8_t os_running(void);
 
 #ifdef __cplusplus
 
